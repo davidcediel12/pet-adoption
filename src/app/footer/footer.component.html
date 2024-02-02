@@ -1,3 +1,15 @@
-<div class="container">
-    <h4>Hello</h4>
-</div>
+<p-sidebar [(visible)]="sidebarVisible">
+    <h3>Sidebar</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+</p-sidebar>
+
+
+<p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+
+<button type="button" class="btn btn-success" icon="pi pi-arrow-right">Success</button>
+
+<p-button label="Submit" icon="pi pi-check"></p-button>
