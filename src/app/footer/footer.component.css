@@ -1,0 +1,21 @@
+.p-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacy-stuff {
+  font-size: 70%;
+}
+
+/* Adjust gutter spacing */
+.grid {
+  --p-gutter: 10.5rem; /* Adjust this value as needed */
+}
+
+.footer {
+  background-color: #f0e0c8;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
