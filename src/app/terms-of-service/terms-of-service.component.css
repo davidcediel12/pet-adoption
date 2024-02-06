@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust height as needed */
+  }
+  
+  .centered-card {
+    text-align: center; /* Optional: Center content horizontally */
+    width: 75vw;
+
+  }
