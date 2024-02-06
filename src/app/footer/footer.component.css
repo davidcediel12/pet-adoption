@@ -1,7 +1,7 @@
 .p-col {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .privacy-stuff {
@@ -17,5 +17,14 @@
   background-color: #f0e0c8;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
+}
+
+.copyright-text{
+  margin: 0px;
+}
+
+.store-logo{
+  height: 15vh;
+  min-height: 5rem;
 }
