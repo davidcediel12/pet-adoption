@@ -8,11 +8,6 @@
   font-size: 80%;
 }
 
-/* Adjust gutter spacing */
-.grid {
-  --p-gutter: 10.5rem; /* Adjust this value as needed */
-}
-
 .footer {
   background-color: #f0e0c8;
   position: fixed;
