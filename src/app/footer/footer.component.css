@@ -12,6 +12,7 @@
   background-color: #f0e0c8;
   bottom: 0;
   width: 100vw;
+  min-height: 20vh;
 }
 
 .copyright-text{
