@@ -1,0 +1,27 @@
+.pet-logo{
+    height: 20rem;
+    opacity: 50%;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../../assets/img/human-cat.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    border-radius: 90%;
+}
+
+h1 {
+    color: rgb(72, 72, 72);
+    font-size: 50px;
+}
+
+.card-header{
+    height: 10em;
+}
