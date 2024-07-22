@@ -8,20 +8,22 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-
     background-image: url("../../assets/img/human-cat.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 70vh;
-    border-radius: 90%;
+    min-height: 60vh;
 }
 
 h1 {
-    color: rgb(72, 72, 72);
+    color: rgb(0, 0, 0);
     font-size: 50px;
 }
 
 .card-header{
     height: 10em;
+}
+
+p {
+    text-align: justify;
 }
