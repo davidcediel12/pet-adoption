@@ -5,15 +5,15 @@ import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.com
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MsalGuard } from '@azure/msal-angular';
+import { TestProfileComponent } from './test-profile/test-profile.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
   { path: 'privacy', component: PrivacyComponent },
   { path: 'terms', component: TermsOfServiceComponent },
-
   {
     path: 'profile',
-    component: ProfileComponent,
+    component: TestProfileComponent,
     // The profile component is protected with MSAL Guard.
     canActivate: [MsalGuard]
   }
