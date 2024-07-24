@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenubarModule } from 'primeng/menubar'
+import { ButtonModule } from 'primeng/button';
 import { MenuModule } from 'primeng/menu'
 
 // Import the Azure AD B2C configuration
@@ -36,6 +37,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     MenubarModule,
     MenuModule,
     HttpClientModule,
+    ButtonModule,
     MsalModule.forRoot(new PublicClientApplication(msalConfig),
       {
         // The routing guard configuration. 

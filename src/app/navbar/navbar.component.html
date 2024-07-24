@@ -2,8 +2,14 @@
 <div class="card">
     <p-menubar [model]="items" class="navbar">
         
-        <ng-template pTemplate="end" [model]="items">
+        <ng-template pTemplate="start" [model]="items">
             <!-- <p-menubar [model]="items" class="navbar"></p-menubar> -->
+        </ng-template>
+
+
+        <ng-template pTemplate="end">
+            <p-button *ngIf = "!loginDisplay" label="Sign In" [link]="true" (onClick)="login()"/>
+            <p-button *ngIf = "loginDisplay" label="Sign Out" [link]="true" (onClick)="logout()"/>
         </ng-template>
     
     </p-menubar>
