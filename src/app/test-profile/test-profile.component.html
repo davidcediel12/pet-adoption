@@ -1,14 +1,18 @@
 <h1>ID token claims:</h1>
 
+<div>
+    <h2>Account Info</h2>
+    <pre>{{ toJsonString(accountInfo) }}</pre>
+  </div>
 <table>
     <tr>
-      <th>claim</th>
-      <th>value</th>
+        <th>claim</th>
+        <th>value</th>
     </tr>
     @for(claim of dataSource; track claim){
-        <tr>
-            <td>{{claim.claim}}</td>
-            <td>{{claim.value}}</td>
-          </tr>
+    <tr>
+        <td>{{claim.claim}}</td>
+        <td>{{claim.value}}</td>
+    </tr>
     }
 </table>

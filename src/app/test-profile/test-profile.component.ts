@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MsalBroadcastService, MsalService } from '@azure/msal-angular';
-import { InteractionStatus } from '@azure/msal-browser';
+import { AccountInfo, InteractionStatus } from '@azure/msal-browser';
 import { Subject, filter, takeUntil } from 'rxjs';
 
 @Component({
@@ -15,6 +15,7 @@ export class TestProfileComponent implements OnInit {
 
   displayedColumns: string[] = ['claim', 'value'];
   dataSource: Claim[] = [];
+  accountInfo?: AccountInfo;
   private readonly _destroying$ = new Subject<void>();
 
 
@@ -33,6 +34,7 @@ export class TestProfileComponent implements OnInit {
       .subscribe(() => {
         this.checkAndSetActiveAccount();
         this.getClaims(this.authService.instance.getActiveAccount()?.idTokenClaims)
+        this.accountInfo = this.authService.instance.getActiveAccount()!;
       })
   }
 
@@ -70,6 +72,10 @@ export class TestProfileComponent implements OnInit {
     this._destroying$.complete();
   }
 
+
+  toJsonString(obj: any): string {
+    return JSON.stringify(obj, null, 2);
+  }
 
 
 
